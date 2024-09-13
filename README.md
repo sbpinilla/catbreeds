@@ -17,13 +17,13 @@
 </tr>
 <tr>
  <td>
-  <img src="https://github.com/sbpinilla/ceiba-app-user/blob/main/img/d.PNG" width="200">
+  <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catListFilter.png" width="200">
   </td>
   <td>
-  <img src="https://github.com/sbpinilla/ceiba-app-user/blob/main/img/e.PNG" width="200">
+  <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catListFilter2.png" width="200">
   </td>
    <td>
-  <img src="https://github.com/sbpinilla/ceiba-app-user/blob/main/img/f.PNG" width="200">
+  <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catListFilter3.png" width="200">
   </td>
 </tr>
 </table>
