@@ -26,4 +26,16 @@
   <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catListFilter3.png" width="200">
   </td>
 </tr>
+
+<tr>
+ <td>
+  <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catDetail.png" width="200">
+  </td>
+  <td>
+  <img src="https://github.com/sbpinilla/catbreeds/blob/master/img/catDetail2.png" width="200">
+  </td>
+   <td>
+  
+  </td>
+</tr>
 </table>
