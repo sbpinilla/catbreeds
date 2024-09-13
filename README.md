@@ -7,7 +7,7 @@ Se implementa una arquitectura MVVM (Vista - Modelo - Vista Modelo)
 
 Para el consulmo de web service se usa ```Retrofit``` con el fin de modelar las paticiones y trabajarlas como objetos 
 
-## 1. Dependencias 
+## 2. Dependencias 
 ```Retrofit``` Cliente http
 
 ```Room``` Base de datos local 
@@ -18,7 +18,7 @@ Para el consulmo de web service se usa ```Retrofit``` con el fin de modelar las 
 
 ```dagger-hilt``` Inyección de dependencias
 
-## 2. Video
+## 3. Video
 <table>
   <tr>
   <td>
@@ -27,7 +27,7 @@ Para el consulmo de web service se usa ```Retrofit``` con el fin de modelar las 
 </tr>
 </table>
 
-## 3. Pantallas
+## 4. Pantallas
 <table>
   <tr>
   <td>
