@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="catbreedsPrincipal">#222222</color>
+    <color name="catbreedsWhite">#ffffff</color>
+
+
+
+    <color name="catbreedsGray1">#4D4D51</color>
+    <color name="catbreedsGray2">#706C6C</color>
+    <color name="catbreedsGray3">#787882</color>
+    <color name="catbreedsGray4">#B5B5C0</color>
+    <color name="catbreedsGray5">#E3E3EC</color>
+    <color name="catbreedsGray6">#F2F2F7</color>
+    <color name="catbreedsGray7">#FBFBFD</color>
+    <color name="catbreedsGraySearch">#3E3E3E</color>
+
+    <color name="catbreedsError">#FF374A</color>
+    
+    
+</resources>

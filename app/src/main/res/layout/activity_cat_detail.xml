@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catDetail.ui.CatDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tbToolBar"
+            style="@style/Catbreeds.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/catbreedsWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abAppBar">
+
+        <ImageView
+            android:id="@+id/imgCat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:transitionName="sharedElementImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abAppBar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_margin_16"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Catbreeds.Txt.TextViewSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_16"
+                    android:text="@string/cat_detail_txt_description" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    style="@style/Catbreeds.Txt.TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:justificationMode="inter_word"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_8" />
+
+                <TextView
+                    style="@style/Catbreeds.Txt.TextViewSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_16"
+                    android:text="@string/cat_detail_txt_country" />
+
+                <TextView
+                    android:id="@+id/txtOrigin"
+                    style="@style/Catbreeds.Txt.TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Catbreeds.Txt.TextViewSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_margin_16"
+                        android:layout_marginEnd="@dimen/dp_margin_8"
+                        android:text="@string/cat_detail_txt_intelligence" />
+
+                    <TextView
+                        android:id="@+id/txtIntelligence"
+                        style="@style/Catbreeds.Txt.TextViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_margin_16" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Catbreeds.Txt.TextViewSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_16"
+                    android:text="@string/cat_detail_txt_live_span" />
+
+                <TextView
+                    android:id="@+id/txtLifeSpan"
+                    style="@style/Catbreeds.Txt.TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_8" />
+
+                <TextView
+                    style="@style/Catbreeds.Txt.TextViewSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_16"
+                    android:text="@string/cat_detail_txt_alt_names" />
+
+                <TextView
+                    android:id="@+id/txtAltNames"
+                    style="@style/Catbreeds.Txt.TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin_8"
+                    android:text="asda" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/dp_margin_16"
+                    android:background="@color/catbreedsPrincipal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lyVetsStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_cat_detail_link"
+                            android:layout_height="@dimen/dp_cat_detail_link"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/pets_24" />
+
+                        <TextView
+                            android:id="@+id/txtVetstreet"
+                            style="@style/Catbreeds.Txt.TextViewSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cat_detail_txt_vetstreet" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LyWiki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_cat_detail_link"
+                            android:layout_height="@dimen/dp_cat_detail_link"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/public_24" />
+
+                        <TextView
+                            android:id="@+id/txtWiki"
+                            style="@style/Catbreeds.Txt.TextViewSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cat_detail_txt_wiki" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_cat_detail_link"
+                    android:layout_marginHorizontal="-16dp"
+                    android:layout_marginVertical="@dimen/dp_margin_16"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="cat_detail_footer.json"
+                    app:lottie_loop="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginVertical="@dimen/dp_margin_16" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

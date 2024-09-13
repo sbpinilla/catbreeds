@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Catbreeds</string>
+    <string name="search_hind">Buscar</string>
+
+    <string name="cat_list_txt_not_fount">Sin resultados</string>
+    <string name="cat_list_txt_btn_reSend">Reintentar</string>
+    <string name="cat_list_txt_error">Sin conexión con el servidor. Revisa tu conexión a internet o intenta nuevamente más tarde.</string>
+
+
+    <string name="item_cat_list_txt_more">Ver mas...</string>
+    <string name="item_cat_list_txt_country">País de origen:</string>
+    <string name="item_cat_list_txt_intelligence">Inteligencia:</string>
+
+    <string name="cat_detail_txt_description">Descripción</string>
+    <string name="cat_detail_txt_intelligence">Inteligencia</string>
+    <string name="cat_detail_txt_country">País de origen</string>
+    <string name="cat_detail_txt_live_span">Esperanza de vida</string>
+    <string name="cat_detail_txt_alt_names">Nombres alternativos</string>
+    <string name="cat_detail_txt_not_fount">No disponible</string>
+    <string name="cat_detail_txt_url">Urls de interes</string>
+    <string name="cat_detail_txt_vetstreet">Vetstreet</string>
+    <string name="cat_detail_txt_wiki">Wiki</string>
+
+</resources>

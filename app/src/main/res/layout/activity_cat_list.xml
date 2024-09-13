@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catList.ui.CatListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tbToolBar"
+            style="@style/Catbreeds.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edlSearch"
+        style="@style/Catbreeds.edt.Search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_search_height"
+        android:layout_marginHorizontal="@dimen/dp_margin_16"
+        android:layout_marginTop="@dimen/dp_margin_16"
+        app:hintTextColor="@color/catbreedsGray3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abAppBar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofadi_one_regular"
+            android:hint="@string/search_hind"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="0dp"
+            android:textColor="@color/catbreedsGray1"
+            android:textSize="@dimen/txt_search_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lavNotFount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlSearch">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/cat_ani_not_fount"
+            android:layout_height="@dimen/cat_ani_not_fount"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cat_list_not_fount.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            style="@style/Catbreeds.Txt.TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cat_list_txt_not_fount" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lavNotRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlSearch">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/cat_ani_not_fount"
+            android:layout_height="@dimen/cat_ani_not_fount"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cat_list_no_items.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            style="@style/Catbreeds.Txt.TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cat_list_txt_not_fount" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cat_list_txt_btn_reSend" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlSearch"
+        tools:itemCount="5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_cat_list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUp"
+        style="@style/MyFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_margin_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/arrow_up_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

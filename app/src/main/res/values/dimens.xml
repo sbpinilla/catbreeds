@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="splash_ani_height">600dp</dimen>
+    <dimen name="loading_ani_height">100dp</dimen>
+    <dimen name="cat_ani_not_fount">200dp</dimen>
+
+    <dimen name="sp_splash_app_name">36sp</dimen>
+
+    <dimen name="edt_search_height">36dp</dimen>
+    <dimen name="edt_border_radius">12dp</dimen>
+    <dimen name="edt_search_border_radius">10dp</dimen>
+    <dimen name="txt_search_size">17sp</dimen>
+
+    <dimen name="dp_margin_16">16dp</dimen>
+    <dimen name="dp_margin_8">8dp</dimen>
+
+    <dimen name="sp_title">24dp</dimen>
+    <dimen name="dp_cat_image">200dp</dimen>
+    <dimen name="dp_cat_image_full">400dp</dimen>
+    <dimen name="dp_cat_detail_link">100dp</dimen>
+
+</resources>

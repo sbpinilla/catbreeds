@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Catbreeds" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/catbreedsPrincipal</item>
+        <item name="colorPrimaryDark">@color/catbreedsPrincipal</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:navigationBarColor">@color/catbreedsWhite</item>
+        <item name="android:windowBackground">@color/catbreedsWhite</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="colorAccent">@color/catbreedsWhite</item>
+
+    </style>
+
+    <!-- Tema full screen -->
+    <style name="Theme.Catbreeds.Splash" parent="Base.Theme.Catbreeds">
+        <item name="colorPrimary">@color/catbreedsPrincipal</item>
+        <item name="colorPrimaryDark">@color/catbreedsPrincipal</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/catbreedsPrincipal</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="Catbreeds.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/catbreedsPrincipal</item>
+        <item name="titleTextColor">@color/catbreedsWhite</item>
+        <item name="titleCentered">true</item>
+        <item name="titleTextAppearance">@style/Catbreeds.ToolbarTitleStyle</item>
+    </style>
+
+    <!-- ToolBar - ToolbarTitleStyle -->
+    <style name="Catbreeds.ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="fontFamily">@font/sofadi_one_regular</item>
+        <item name="android:textSize">@dimen/sp_title</item>
+        <item name="android:textColor">@color/catbreedsWhite</item>
+    </style>
+
+    <!-- SearchView -->
+    <style name="Catbreeds.edt.Search" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorTextColor">@color/catbreedsError</item>
+        <item name="boxStrokeErrorColor">@color/catbreedsError</item>
+        <item name="endIconTint">@color/catbreedsGray1</item>
+        <item name="android:textColor">@color/catbreedsPrincipal</item>
+        <item name="startIconDrawable">@drawable/ic_search_24</item>
+        <item name="startIconTint">@color/catbreedsGray1</item>
+        <item name="boxBackgroundColor">@color/catbreedsGray6</item>
+        <item name="hintEnabled">false</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="boxStrokeColor">@color/catbreeds_edt_search</item>
+        <item name="endIconDrawable">@drawable/ic_clear_14</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="fontFamily">@font/sofadi_one_regular</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/edt_search_border_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/edt_search_border_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/edt_search_border_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/edt_search_border_radius</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="Catbreeds.Txt.TextViewTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/catbreedsPrincipal</item>
+        <item name="android:fontFamily">@font/sofadi_one_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Catbreeds.Txt.TextViewSubTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/catbreedsPrincipal</item>
+        <item name="android:fontFamily">@font/sofadi_one_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Catbreeds.Txt.TextViewNormal" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/catbreedsPrincipal</item>
+        <item name="android:fontFamily">@font/sofadi_one_regular</item>
+
+    </style>
+
+    <!-- FAB -->
+    <style name="MyFloatingActionButton" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/MyFabOverlay</item>
+    </style>
+
+    <style name="MyFabOverlay">
+        <item name="colorSecondary">@color/catbreedsPrincipal</item>
+        <!-- color used by the icon -->
+        <item name="colorOnSecondary">@color/catbreedsWhite</item>
+    </style>
+
+</resources>
+
+
