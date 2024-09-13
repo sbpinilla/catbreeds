@@ -16,8 +16,7 @@ Para el consulmo de web service se usa ```Retrofit``` con el fin de modelar las 
 
 ```glide``` Carga asincrona de images 
 
-
- 
+```dagger-hilt``` Inyección de dependencias
 
 ## 2. Video
 <table>
