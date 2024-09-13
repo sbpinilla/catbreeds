@@ -1,6 +1,15 @@
 # Prueba Técnica Mobile - Sergio Baudilio Pinilla Martinez 
- 
-## 1. Pantallas
+
+## 1. Video
+<table>
+  <tr>
+  <td>
+   https://youtube.com/shorts/QofZA6iyg2Y
+  </td>
+  
+</tr>
+</table>
+## 2. Pantallas
 
 <table>
   <tr>
