@@ -1,16 +1,34 @@
 # Prueba Técnica Mobile - Sergio Baudilio Pinilla Martinez 
 
-## 1. Video
+## 1. Arquitectura
+Se implementa una arquitectura MVVM (Vista - Modelo - Vista Modelo)
+
+<img src="https://github.com/sbpinilla/catbreeds/blob/master/img/code.png" width="600">
+
+Para el consulmo de web service se usa ```Retrofit``` con el fin de modelar las paticiones y trabajarlas como objetos 
+
+## 1. Dependencias 
+```Retrofit``` Cliente http
+
+```Room``` Base de datos local 
+
+```lottie``` Animaciones
+
+```glide``` Carga asincrona de images 
+
+
+ 
+
+## 2. Video
 <table>
   <tr>
   <td>
    https://youtube.com/shorts/QofZA6iyg2Y
   </td>
-  
 </tr>
 </table>
-## 2. Pantallas
 
+## 3. Pantallas
 <table>
   <tr>
   <td>
