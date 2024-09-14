@@ -13,4 +13,9 @@ interface ICatListRepository {
      * @return Listado de gatos connsultado desde el web service
      */
     suspend fun getCats(): List<BreedsDTO>?
+
+    suspend fun saveCats(cats: List<BreedsDTO>)
+
+    suspend fun getLocalCats(): List<BreedsDTO>
+
 }

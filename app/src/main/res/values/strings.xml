@@ -20,5 +20,6 @@
     <string name="cat_detail_txt_url">Urls de interes</string>
     <string name="cat_detail_txt_vetstreet">Vetstreet</string>
     <string name="cat_detail_txt_wiki">Wiki</string>
+    <string name="cat_detail_url_not_fount">Url no disponible</string>
 
 </resources>

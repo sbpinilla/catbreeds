@@ -5,6 +5,8 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.google.android.material.snackbar.Snackbar
 import com.sergiodev.catbreeds.R
 import com.sergiodev.catbreeds.catList.ui.CatListActivity
 import com.sergiodev.catbreeds.catList.ui.model.CatModel
@@ -45,7 +47,11 @@ class CatDetailActivity : AppCompatActivity() {
     private fun setupView() {
 
         gCat = intent.getSerializableExtra(CatListActivity.BUNDLE_CAT) as CatModel
-        Glide.with(this).load(gCat.url).into(binding.imgCat)
+        Glide.with(this)
+            .load(gCat.url)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .error(R.drawable.pets_24)
+            .into(binding.imgCat)
 
         binding.txtDescription.text = gCat.description
         binding.txtOrigin.text = gCat.origin
@@ -91,6 +97,11 @@ class CatDetailActivity : AppCompatActivity() {
      * @param url Url para abrir
      */
     private fun openUrl(url: String) {
+
+        if (url.isEmpty()) {
+            Snackbar.make(binding.imgCat, getString(R.string.cat_detail_url_not_fount), Snackbar.LENGTH_LONG).show()
+            return
+        }
 
         val i = Intent(Intent.ACTION_VIEW)
         i.data = Uri.parse(url)

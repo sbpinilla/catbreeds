@@ -23,16 +23,31 @@ class CatListInteractor @Inject constructor(private val catListRepository: ICatL
 
         emit(ApiResponse.Loading(true))
 
-        val response = catListRepository.getCats()?.map { x -> x.toCatModel() }
+        val response = catListRepository.getCats()
 
         if (response != null) {
-            emit(ApiResponse.Success(response))
+            catListRepository.saveCats(response)
+            val responseCatModel = response.map { x -> x.toCatModel() }
+            emit(ApiResponse.Success(responseCatModel))
         } else {
-            emit(ApiResponse.Error(""))
+            val responseLocal = catListRepository.getLocalCats().map { x -> x.toCatModel() }
+            if (responseLocal.isNotEmpty()) {
+                emit(ApiResponse.Success(responseLocal))
+            } else {
+                emit(ApiResponse.Error(""))
+            }
         }
         emit(ApiResponse.Loading(false))
     }.catch { e ->
+
+        val responseLocal = catListRepository.getLocalCats().map { x -> x.toCatModel() }
+        if (responseLocal.isNotEmpty()) {
+            emit(ApiResponse.Success(responseLocal))
+        } else {
+            emit(ApiResponse.Error("Error -> ${e.message}"))
+        }
+
         emit(ApiResponse.Loading(false))
-        emit(ApiResponse.Error("Error -> ${e.message}"))
+
     }.flowOn(Dispatchers.IO)
 }

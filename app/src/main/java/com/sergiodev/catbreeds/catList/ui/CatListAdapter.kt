@@ -6,6 +6,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.signature.ObjectKey
+import com.sergiodev.catbreeds.R
 import com.sergiodev.catbreeds.catList.ui.model.CatModel
 import com.sergiodev.catbreeds.databinding.ItemCatListBinding
 
@@ -69,7 +72,11 @@ class CatListAdapter(private var data: List<CatModel>) :
             binding.txtCountry.text = catModel.origin
             binding.txtintelligence.text = "${catModel.intelligence}"
 
-            Glide.with(context).load(catModel.url).into(binding.imgCat)
+            Glide.with(context)
+                .load(catModel.url)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .error(R.drawable.pets_24)
+                .into(binding.imgCat)
 
             binding.clContainer.setOnClickListener {
                 onSelectCat(catModel, binding.imgCat)
