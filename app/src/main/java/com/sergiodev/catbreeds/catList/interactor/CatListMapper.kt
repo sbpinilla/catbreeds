@@ -23,6 +23,9 @@ fun BreedsDTO.toCatModel(): CatModel {
     )
 }
 
+/**
+ *  Metodo que nos permite convertir un [BreedsDTO] a [CatEntity]
+ */
 fun BreedsDTO.toCatEntity(): CatEntity {
 
     return CatEntity(
@@ -39,6 +42,9 @@ fun BreedsDTO.toCatEntity(): CatEntity {
     )
 }
 
+/**
+ *  Metodo que nos permite convertir un [CatEntity] a [BreedsDTO]
+ */
 fun CatEntity.toBreedsDTO(): BreedsDTO {
 
     return BreedsDTO().apply {

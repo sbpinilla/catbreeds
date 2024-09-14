@@ -5,6 +5,7 @@ import android.content.Context
 import android.view.Window
 import android.view.WindowManager
 import com.sergiodev.catbreeds.R
+import com.sergiodev.catbreeds.databinding.ModalLoaderBinding
 
 /**
  * Esta clase modela el modal de cargando
@@ -12,7 +13,11 @@ import com.sergiodev.catbreeds.R
  * @version 1.0
  */
 class LoadingModal(context: Context) {
+
+
     private val dialog: Dialog = Dialog(context)
+    private val binding: ModalLoaderBinding = ModalLoaderBinding.inflate(dialog.layoutInflater)
+
 
     /**
      * Metodo inicializador de la clase, se encarga de validar que modal tenga tranparencia
@@ -20,7 +25,7 @@ class LoadingModal(context: Context) {
     init {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
-        dialog.setContentView(R.layout.modal_loader)
+        dialog.setContentView(binding.root)
 
         val layoutParams = WindowManager.LayoutParams()
         layoutParams.copyFrom(dialog.window?.attributes)

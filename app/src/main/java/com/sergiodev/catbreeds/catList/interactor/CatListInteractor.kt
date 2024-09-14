@@ -19,6 +19,9 @@ import javax.inject.Inject
  */
 class CatListInteractor @Inject constructor(private val catListRepository: ICatListRepository) : ICatListInteractor {
 
+    /**
+     * {@inheritDoc}
+     */
     override fun getCats() = flow {
 
         emit(ApiResponse.Loading(true))
@@ -30,6 +33,7 @@ class CatListInteractor @Inject constructor(private val catListRepository: ICatL
             val responseCatModel = response.map { x -> x.toCatModel() }
             emit(ApiResponse.Success(responseCatModel))
         } else {
+
             val responseLocal = catListRepository.getLocalCats().map { x -> x.toCatModel() }
             if (responseLocal.isNotEmpty()) {
                 emit(ApiResponse.Success(responseLocal))

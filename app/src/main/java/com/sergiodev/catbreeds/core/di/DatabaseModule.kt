@@ -12,7 +12,11 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-
+/**
+ * Modulo que permite definir las injecciones Room
+ * @author sbpinilla
+ * @version 1.0
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 class DatabaseModule {

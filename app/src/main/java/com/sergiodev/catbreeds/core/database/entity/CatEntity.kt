@@ -3,6 +3,12 @@ package com.sergiodev.catbreeds.core.database.entity
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+
+/**
+ * Clase que representa la entidad CatEntity en la base de datos.
+ * @author sbpinilla
+ * @version 1.0
+ */
 @Entity
 data class CatEntity(
     @PrimaryKey val id: String,

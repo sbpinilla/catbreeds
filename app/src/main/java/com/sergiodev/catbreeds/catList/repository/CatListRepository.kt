@@ -24,10 +24,16 @@ class CatListRepository @Inject constructor(
      */
     override suspend fun getCats(): List<BreedsDTO>? = apiClient.getCats()
 
+    /**
+     * {@inheritDoc}
+     */
     override suspend fun saveCats(cats: List<BreedsDTO>) {
         catDAO.insertAll(cats.map { x -> x.toCatEntity() })
     }
 
+    /**
+     * {@inheritDoc}
+     */
     override suspend fun getLocalCats(): List<BreedsDTO> {
         return catDAO.getLocalCats().map { x -> x.toBreedsDTO() }
     }

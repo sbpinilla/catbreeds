@@ -72,8 +72,12 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 
     implementation("com.airbnb.android:lottie:3.4.0")
-
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:3.11.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
 
 
     testImplementation(libs.junit)

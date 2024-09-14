@@ -18,6 +18,11 @@ import com.sergiodev.catbreeds.catList.ui.CatListActivity
 import com.sergiodev.catbreeds.core.view.BaseActivity
 import com.sergiodev.catbreeds.databinding.ActivitySplashBinding
 
+/**
+ * Esta clase modela la actividad de splash,
+ * @author sbpinilla
+ * @version 1.0
+ */
 class SplashActivity : BaseActivity() {
 
     private lateinit var binding: ActivitySplashBinding

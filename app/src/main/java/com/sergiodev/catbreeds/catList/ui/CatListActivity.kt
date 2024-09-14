@@ -154,7 +154,7 @@ class CatListActivity : BaseActivity() {
     }
 
     /**
-     * Metodo utilizado para procesar la la lista de gatos
+     * Metodo utilizado para procesar la lista de gatos
      * @param cats Lista de gatos obtenida desde el servidor
      */
     private fun processCatList(cats: List<CatModel>) {
@@ -165,6 +165,9 @@ class CatListActivity : BaseActivity() {
         gCardsAdapter.update(gCats)
     }
 
+    /**
+     * Metodo utilizado para procesar el error en la consulta
+     */
     private fun processError() {
         binding.lavNotRed.visibility = View.VISIBLE
         binding.rvCats.visibility = View.GONE
